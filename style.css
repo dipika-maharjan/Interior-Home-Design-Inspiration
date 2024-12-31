@@ -1,0 +1,161 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    height: 100%;
+    width: 100%;
+    font-family: "Ethereal", "Baskerville Old Face", "Baskerville", serif;;
+}
+
+.navbar{
+    height: 20vh;
+    width : 100%;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    justify-content: space-between;
+    background-color: #B19F6F;
+}
+
+.logo img{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    margin-top: 10px;
+}
+
+.searchbar{
+    display: flex;
+    align-items: center;
+    height: 40px;
+    width: 500px;
+    border-radius: 6px;
+    overflow: hidden; /* Ensure rounded corners */
+    position: relative; /* Relative positioning for search icon */
+}
+
+.searchbar:hover{
+    border: 2px solid black;
+}
+
+.searchinput {
+    flex: 1; /* Input takes up remaining space */
+    padding: 10px;
+    font-size: 1rem;
+    border: none; /* Remove default borders */
+    outline: none; /* Remove focus outline */
+}
+
+.searchicon {
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 50px; 
+    background-color: black; 
+    color: white; 
+    cursor: pointer; /* Show pointer cursor */
+}
+
+.navelement{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    font-size: 18px;
+}
+
+.navelement a{
+    color:black;
+    text-decoration: none;
+}
+
+.home a:hover{
+    color: white;
+}
+
+.contact a:hover{
+    color: white;
+}
+
+.help a:hover{
+    color: white;
+}
+
+.account a:hover{
+    color: white;
+}
+
+.profile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px; 
+    width: 60px;  
+    margin-right: 20px;
+    flex-direction: column;
+    margin-bottom: 15px;
+    position: relative; /*Similar to static, but allows positioning offsets*/
+}
+
+.profile i {
+    font-size: 2rem; /* Adjust icon size */
+}
+
+.account{
+    font-size: 15px;
+    color: black;
+}
+
+.profile:hover{
+    cursor: pointer;
+}
+
+.drop-down{
+    display: none; /*hides the dropdown initially*/
+    position: absolute; /*brings the dropdown in the down position*/
+    top: 60px; /* Space below the icon */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Center alignment */
+    background-color: #B19F6F; 
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Shadow */
+    z-index: 10; /* Appear above other elements */
+}
+
+.drop-down a{
+    display: block;
+    padding: 10px;
+    color: black;
+    text-decoration: none;
+    text-align: center;
+}
+
+.profile:hover .drop-down{
+    display: block; /*make dropdown visible*/
+}
+
+.drop-down a:hover{
+    color:#ffffff;
+}
+
+.front-image{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    background-image: url("front-image.png");
+    background-repeat: no-repeat;
+}
+
+.front-image h1{
+    color: white;
+    margin: 0px 0px 54px;
+    line-height: 75px;
+    font-size: 60px;
+    font-weight: 300;
+}
+
