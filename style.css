@@ -203,7 +203,7 @@
     background-position: center; 
     border-radius: 10px; 
     margin-bottom: 10px; 
-}
+}   
 
 .box-content p {
     font-size: 16px;
@@ -215,3 +215,114 @@
     color: #B19F6F;
 }
 
+.consultation{
+    background-color: #f6f6f6;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px;
+}
+
+.consult p{
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.consult-img{
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+    width: 50%;
+    margin: 40px;
+    border-radius: 4px;
+}
+
+.consult-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-left: 20px;
+}
+
+.consult-text p{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: 40px;
+}
+
+.consult-text button{
+    background-color: #B19F6F;
+    border-color: #B19F6F;
+    border-radius: 6px;
+    height: 6vh;
+    width: 40vh;
+    font-size: 16px;
+}
+
+.consult-text button:hover{
+    cursor: pointer;
+    background-color: #8A7C56 ;
+}
+
+footer{
+    margin-top: 10px;
+}
+
+.footer1{
+    background-color: #3d3a37;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer1 a {
+    color: #f8f8f8;
+    text-decoration: none;
+}
+
+.footer2{
+    height: 40vh;
+    background-color: #111111;
+    display: flex;
+    gap: 30px;
+    color: white;
+    align-items: center;
+    justify-items: center;
+    justify-content: space-evenly;
+    
+}
+
+.footer2 ul p{
+    display: flex;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-decoration: underline;
+}
+
+.footer2 a{
+    display: block; /*all comes in a single line*/
+    font-size: 1rem;
+    margin-top: 10px;
+}
+
+.footer2 a:hover{
+    cursor: pointer;
+    color: #DBDBDB;
+}
+
+.footer3{
+    height: 5vh;
+    background-color: #111111;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
