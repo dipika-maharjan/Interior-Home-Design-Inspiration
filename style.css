@@ -9,14 +9,36 @@
     font-family: "Ethereal", "Baskerville Old Face", "Baskerville", serif;;
 }
 
+.front-image{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    background-image: url("front-image.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.front-image h1{
+    color: white;
+    margin: 0px 0px 30px;
+    line-height: 75px;
+    font-size: 60px;
+    font-weight: 300;
+}
+
 .navbar{
-    height: 20vh;
+    height: 15vh;
     width : 100%;
     display: flex;
     align-items: center;
     font-weight: bold;
     justify-content: space-between;
-    background-color: #B19F6F;
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.8); 
+    top: 0;
 }
 
 .logo img{
@@ -24,39 +46,6 @@
     width: 100px;
     border-radius: 50%;
     margin-top: 10px;
-}
-
-.searchbar{
-    display: flex;
-    align-items: center;
-    height: 40px;
-    width: 500px;
-    border-radius: 6px;
-    overflow: hidden; /* Ensure rounded corners */
-    position: relative; /* Relative positioning for search icon */
-}
-
-.searchbar:hover{
-    border: 2px solid black;
-}
-
-.searchinput {
-    flex: 1; /* Input takes up remaining space */
-    padding: 10px;
-    font-size: 1rem;
-    border: none; /* Remove default borders */
-    outline: none; /* Remove focus outline */
-}
-
-.searchicon {
-    display: flex; 
-    justify-content: center;
-    align-items: center;
-    height: 40px;
-    width: 50px; 
-    background-color: black; 
-    color: white; 
-    cursor: pointer; /* Show pointer cursor */
 }
 
 .navelement{
@@ -72,19 +61,19 @@
 }
 
 .home a:hover{
-    color: white;
+    color: #B19F6F;
 }
 
 .contact a:hover{
-    color: white;
+    color: #B19F6F;
 }
 
 .help a:hover{
-    color: white;
+    color: #B19F6F;
 }
 
 .account a:hover{
-    color: white;
+    color: #B19F6F;
 }
 
 .profile {
@@ -118,8 +107,6 @@
     top: 60px; /* Space below the icon */
     left: 50%; /* Center horizontally */
     transform: translateX(-50%); /* Center alignment */
-    background-color: #B19F6F; 
-    border-radius: 5px; /* Rounded corners */
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Shadow */
     z-index: 10; /* Appear above other elements */
 }
@@ -137,27 +124,7 @@
 }
 
 .drop-down a:hover{
-    color:#ffffff;
-}
-
-.front-image{
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-    height: 100vh;
-    width: 100%;
-    background-image: url("front-image.webp");
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.front-image h1{
-    color: white;
-    margin: 0px 0px 30px;
-    line-height: 75px;
-    font-size: 60px;
-    font-weight: 300;
+    color:#B19F6F;
 }
 
 .content{
@@ -325,4 +292,94 @@ footer{
     justify-content: center;
     align-items: center;
     color: white;
+}
+
+/*login*/
+
+.login-body{
+    background: linear-gradient(to bottom right, #f9f9f9, #b5b1b1); 
+}
+
+.login-image{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.form-wrapper {
+    height: 60vh;
+    width: 100%;
+    max-width: 500px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 60px;
+    margin-bottom: 60px;
+    margin-left: 500px;
+    background-color: #f9f9f9;
+}
+
+.form-container {
+    text-align: center;
+}
+
+.form-container h1 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.form-container h2 {
+    font-size: 1.5rem;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.form-group label {
+    font-size: 1rem;
+    margin-bottom: 5px;
+    display: block;
+    color: #333;
+}
+
+.form-group input {
+    display: flex;
+    padding: 10px;
+    font-size: 1rem;
+    width: 95%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.btn-submit {
+    padding: 12px;
+    font-size: 1rem;
+    width: 100%;
+    background-color: #746B61;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn-submit:hover {
+    background-color: #5a4a3d;
+}
+
+.register-redirect {
+    margin-top: 20px;
+}
+
+.register-redirect a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.register-redirect a:hover {
+    text-decoration: underline;
 }
