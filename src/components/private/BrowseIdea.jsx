@@ -1,5 +1,5 @@
 import React from "react";
-import css from '../../assets/styles/style.css';
+import '../../styles/BrowseIdea.css';
 import livingRoomImage from "../../assets/images/living.jpg";
 import bedroomImage from "../../assets/images/bedroom.jpg";
 import diningImage from "../../assets/images/dining.jpg";

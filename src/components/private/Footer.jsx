@@ -1,5 +1,5 @@
 import React from "react";
-import css from '../../assets/styles/style.css';
+import '../../styles/Footer.css';
 import { FaWhatsapp, FaEnvelope, FaClock, FaLocationArrow, FaFacebook, FaInstagram, FaPinterest, FaYoutube } from 'react-icons/fa';
 
 function Footer() {

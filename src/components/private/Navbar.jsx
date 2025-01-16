@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import logo from '../../assets/images/logo.png';  
-import css from '../../assets/styles/style.css';
+import '../../styles/Navbar.css';
 import { FaUser } from "react-icons/fa";
 
 function Navbar() {

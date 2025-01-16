@@ -1,5 +1,6 @@
 import React from "react";
-import css from '../../assets/images/front-image.webp';
+import '../../assets/images/front-image.webp';
+import '../../styles/FrontSection.css';
 
 function FrontSection(){
     return(

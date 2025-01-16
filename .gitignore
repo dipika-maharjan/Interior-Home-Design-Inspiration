@@ -1,1 +1,11 @@
 node_modules
+node_modules/
+homepage.html
+images/
+login.html
+signup.html
+style.css
+package-lock.json
+public/
+src/
+webpack.config.js

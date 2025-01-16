@@ -1,5 +1,5 @@
 import React from "react";
-import '../../assets/styles/style.css';
+import '../../styles/Consult.css';
 import consultImage from '../../assets/images/consultation.jpg';
 
 function Consultation(){
