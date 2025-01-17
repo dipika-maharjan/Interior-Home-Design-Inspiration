@@ -1,7 +1,8 @@
 import React, { useState } from 'react';  
 import '../../styles/Login.css';
 import loginImage from '../../assets/images/login.webp';
-import logo from '../../assets/images/logo.png';
+import { Link } from 'react-router-dom';
+
 
 
 function LoginPage(){
@@ -55,7 +56,7 @@ function LoginPage(){
             </div>
           </form>
           <div className="register-redirect">
-            <p>Don't have an account? <a href="/Signup">Register now</a></p>
+            <p>Don't have an account? <Link to="/Signup">Register</Link></p>
           </div>
         </div>
       </div>

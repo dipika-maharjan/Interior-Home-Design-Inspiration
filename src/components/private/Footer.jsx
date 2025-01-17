@@ -1,12 +1,13 @@
 import React from "react";
 import '../../styles/Footer.css';
 import { FaWhatsapp, FaEnvelope, FaClock, FaLocationArrow, FaFacebook, FaInstagram, FaPinterest, FaYoutube } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 
 function Footer() {
     return (
         <footer>
             <div className="footer1">
-                <a href="#back">Back to top</a>
+            <Link to="#" onClick={() => window.scrollTo({ top: document.querySelector('.navbar').offsetTop, behavior: 'smooth' })}>Back to top</Link>
             </div>
 
             <div className="footer2">
