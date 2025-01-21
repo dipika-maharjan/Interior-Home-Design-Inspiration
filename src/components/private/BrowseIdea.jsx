@@ -14,23 +14,57 @@ import traditionalImage from "../../assets/images/traditional.jpg";
 import contemporaryImage from "../../assets/images/contemporary.jpg";
 import budgetFriendlyImage from "../../assets/images/budget.jpg";
 import luxuryImage from "../../assets/images/luxury.jpg";
+import { useNavigate } from "react-router-dom";
 
 function BrowseIdea() {
+    const navigate = useNavigate();
+
     const sections = [
-        { 
-            title: "By Room", 
-            items: ["Living Room", "Bed Room", "Dining", "Kitchen", "Office", "Bathroom"], 
-            images: [livingRoomImage, bedroomImage, diningImage, kitchenImage, officeImage, bathroomImage] 
+        {
+            title: "By Room",
+            items: [
+                { name: "Living Room", path: "/LivingSection" },
+                { name: "Bed Room", path: "/BedroomSection" },
+                { name: "Dining", path: "/DiningSection" },
+                { name: "Kitchen", path: "/KitchenSection" },
+                { name: "Office", path: "/OfficeSection" },
+                { name: "Bathroom", path: "/BathroomSection" }
+            ],
+            images: [
+                livingRoomImage, 
+                bedroomImage, 
+                diningImage, 
+                kitchenImage, 
+                officeImage, 
+                bathroomImage
+            ]
         },
-        { 
-            title: "By Design", 
-            items: ["Modern", "Rustic", "Bohemian", "Minimalist", "Traditional", "Contemporary"], 
-            images: [modernImage, rusticImage, bohemianImage, minimalistImage, traditionalImage, contemporaryImage] 
+        {
+            title: "By Design",
+            items: [
+                { name: "Modern", path: "/ModernSection" },
+                { name: "Rustic", path: "/RusticSection" },
+                { name: "Bohemian", path: "/BohemianSection" },
+                { name: "Minimalist", path: "/MinimalistSection" },
+                { name: "Traditional", path: "/TraditionalSection" },
+                { name: "Contemporary", path: "/ContemporarySection" }
+            ],
+            images: [
+                modernImage,
+                rusticImage,
+                bohemianImage,
+                minimalistImage,
+                traditionalImage,
+                contemporaryImage
+            ]
         },
-        { 
-            title: "By Themes", 
-            items: ["Budget-friendly", "Luxury"], 
-            images: [budgetFriendlyImage, luxuryImage] 
+        {
+            title: "By Themes",
+            items: [
+                { name: "Budget-friendly", path: "/BudgetFriendlySection" },
+                { name: "Luxury", path: "/LuxurySection" }
+            ],
+            images: [budgetFriendlyImage, luxuryImage]
         }
     ];
 
@@ -44,12 +78,16 @@ function BrowseIdea() {
                     <h2>Browse Ideas {section.title}</h2>
                     <div className="box-content">
                         {section.items.map((item, i) => (
-                            <div key={i} className="box-item">
+                            <div 
+                                key={i} 
+                                className="box-item" 
+                                onClick={() => navigate(item.path)} 
+                            >
                                 <div 
                                     className="box-image" 
                                     style={{ backgroundImage: `url(${section.images[i]})` }}
                                 ></div>
-                                <p>{item}</p>
+                                <p>{item.name}</p>
                             </div>
                         ))}
                     </div>

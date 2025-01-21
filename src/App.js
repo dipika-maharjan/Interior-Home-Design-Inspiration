@@ -9,6 +9,7 @@ import LoginPage from './components/public/Login';
 import Homepage from './components/private/Homepage';
 import SignupPage from './components/public/Signup';
 import BookConsultation from './components/private/BookConsultation';
+import LivingSection from './components/private/LivingSection';
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
           <Route path="/Consult" element={<Consultation />} />
           <Route path="/Signup" element={<SignupPage />} />
           <Route path="/BookConsultation" element={<BookConsultation />} />
+          <Route path="/LivingSection" element={<LivingSection />} />
         </Routes>
         <Footer />
       </div>
